@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Image src={assets.header_bg_color} alt="icon" className="w-full" />
             </div>
             <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-                <a href="#top" className="text-3xl font-Outfit font-bold tracking-tight text-gray-900">
+                <a href="#top" className="text-3xl font-outfit font-bold tracking-tight text-gray-900">
                     Ife<span className="text-pink-600">Chukwu.</span>
                 </a>
 
