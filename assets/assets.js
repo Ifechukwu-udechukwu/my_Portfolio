@@ -37,7 +37,10 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import github from './github.png';
 import chrome from './chrome.png';
-import postman from './postman.svg'
+import postman from './postman.svg';
+import backend from './backend.png';
+import ai from './ai.png';
+import writer from './writer.png';
 
 export const assets = {
     user_image,
@@ -79,7 +82,10 @@ export const assets = {
     right_arrow_bold_dark,
     postman,
     chrome,
-    github
+    github,
+    backend,
+    ai,
+    writer
 };
 
 export const workData = [
@@ -106,10 +112,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Frontend development', description: 'Frontend development is the process of creating the visual and interactive side of websites and web applications — everything users see and engage with directly. It combines design, structure, and functionality to deliver a smooth and enjoyable user experience. As a frontend developer, I focus on building fast, responsive, and visually appealing interfaces that adapt perfectly across all devices. I work with technologies such as HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS to bring designs to life with clean, modern layouts. Beyond aesthetics, I ensure accessibility, usability, and performance optimization so users can enjoy intuitive navigation and seamless interactions. My goal is to turn creative ideas into functional digital experiences that not only look great but perform efficiently across platforms.', link: '' },
+    { icon: assets.backend, title: 'Backend development', description: 'Backend development powers the behind-the-scenes logic of websites and applications. It’s what connects the interface to the database and ensures that everything functions smoothly and securely. As a backend developer, I specialize in building efficient, scalable, and secure systems that handle data storage, server communication, and user authentication. I use tools and frameworks like Node.js, Express.js, and MongoDB to create reliable APIs and server-side logic that support the frontend seamlessly. My work ensures that data flows properly between the user and the system while maintaining security, speed, and reliability. Whether it’s setting up databases, integrating APIs, or managing server infrastructure, my focus is on creating a stable foundation that allows web applications to perform flawlessly under any load.', link: '' },
+    { icon: assets.ai, title: 'Ai prompting', description: 'AI prompting is all about crafting effective instructions that guide artificial intelligence models to produce accurate, meaningful, and creative results. It’s a skill that blends communication, critical thinking, and creativity to harness the full potential of AI tools like ChatGPT, Midjourney, and DALL·E. As an AI prompt engineer, I design and refine prompts that help AI systems understand intent and deliver high-quality outputs across different domains — from content generation to coding assistance and automation. My work involves experimenting with tone, structure, and context to ensure clarity and precision in every response. I also explore AI-driven workflows to enhance productivity and creativity in digital projects. In essence, AI prompting allows me to bridge human imagination with artificial intelligence, transforming ideas into efficient, intelligent results.', link: '' },
+    { icon: assets.writer, title: 'Content writer', description: 'Content writing is the art of communicating ideas through words to inform, engage, and inspire an audience. It’s more than just writing — it’s about storytelling, clarity, and connecting with readers on a meaningful level. As a content writer, I craft compelling and well-researched material for blogs, websites, and digital platforms, ensuring every piece is both engaging and informative. I focus on clarity, flow, and structure, while also applying SEO strategies to help content reach the right audience. I’m also a fast and efficient writer, capable of producing high-quality content within short deadlines without compromising on accuracy or creativity. My approach balances creativity and professionalism — delivering words that not only sound good but serve a purpose. Whether it’s explaining technical concepts, promoting services, or telling brand stories, I aim to create content that builds trust, boosts visibility, and leaves a lasting impression.', link: '' },
 ]
 
 export const infoList = [
