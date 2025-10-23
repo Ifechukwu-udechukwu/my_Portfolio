@@ -90,24 +90,22 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
+        title: 'E-commerce project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: '/e-commerce.png',
+        link: "https://flex-shopping.vercel.app"
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
+        title: 'Blog project',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: '/blog.png',
+        link: "https://gist-with-adaora.vercel.app"
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Landing page project',
+        description: 'Web Design',
+        bgImage: '/landing-page.png',
+        link: "https://agency-website-beryl.vercel.app"
     },
 ]
 
