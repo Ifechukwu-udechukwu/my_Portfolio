@@ -8,9 +8,9 @@ const Footer = ({isDarkMode}) => {
         <h1 className="text-2xl sm:text-3xl font-outfit font-bold tracking-tight ">
           Ife<span className="text-pink-600">Chukwu.</span>
         </h1>
-        <div className="flex flex-col sm:flex-row w-max items-center gap-2 mx-auto mt-2">
+        <div className="flex flex-col sm:flex-row items-center gap-2 mx-auto mt-2 px-4">
           <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt="logo" className="w-5 sm:w-6" />
-          <span className="text-sm sm:text-base break-all sm:break-normal">peterifechukwuudechukwu@gmail.com</span>
+          <span className="text-sm sm:text-base break-all">peterifechukwuudechukwu@gmail.com</span>
         </div>
       </div>
 
