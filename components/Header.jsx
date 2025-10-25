@@ -7,14 +7,14 @@ const Header = () => {
       <div>
         <Image src={assets.profile_img} alt="img" className="rounded-full w-32 h-32 object-cover" />
       </div>
-      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo">Hi! I'm Ifechukwu Udechukwu         <Image src={assets.hand_icon} alt="icon" className="w-6" />
+      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo">Hi! I'm Ifechukwu Peter Udechukwu         <Image src={assets.hand_icon} alt="icon" className="w-6" />
       </h3>
       <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-ovo">Fullstack web developer.</h1>
       <p className="max-w-2xl mx-auto font-ovo">I am a fullstack developer from Enugu, Nigeria with 2 years of experience.</p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">contact me         <Image src={assets.right_arrow_white} alt="img" className="w-4" />
+        <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">contact me         <Image src={assets.right_arrow_white} alt="img" className="w-4" />
         </a>
-         <a href="/sample-resume.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">my resume         <Image src={assets.download_icon} alt="img" className="w-4" />
+         <a href="/sample-resume.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2  dark:text-black bg-white/80">my resume         <Image src={assets.download_icon} alt="img" className="w-4" />
         </a>
       </div>
     </div>
