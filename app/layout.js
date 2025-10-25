@@ -1,5 +1,7 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
+
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -23,6 +25,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${outfit.variable} ${ovo.variable} scroll-smooth`}>
       <body className="antialiased leading-8 overflow-x-hidden">
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
+
       </body>
     </html>
   );
