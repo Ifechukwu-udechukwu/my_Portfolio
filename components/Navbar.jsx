@@ -2,7 +2,7 @@ import { assets } from "@/assets/assets"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
     const [isScroll, setIsScroll] = useState(false)
 
@@ -12,19 +12,19 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         sideMenuRef.current.style.transform = "translateX(0)"
     }
 
-     const closeMenu = () => {
+    const closeMenu = () => {
         sideMenuRef.current.style.transform = "translateX(100%)"
     }
 
-    useEffect(()=>{
-        window.addEventListener("scroll", ()=>{
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
             if (scrollY > 50) {
                 setIsScroll(true)
-            }else{
+            } else {
                 setIsScroll(false)
             }
         })
-    },[])
+    }, [])
 
     return (
         <>
@@ -45,19 +45,23 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 </ul>
 
                 <div className="flex items-center gap-2 sm:gap-4">
-                    <button onClick={()=>setIsDarkMode(prev => !prev)}>
-                        <Image src={isDarkMode ? assets.sun_icon :assets.moon_icon} alt="icon" className="w-5 sm:w-6" />
+                    <button onClick={() => setIsDarkMode(prev => !prev)}>
+                        <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="icon" className="w-5 sm:w-6" />
                     </button>
                     <a href="#contact" className="hidden lg:flex items-center gap-2 xl:gap-3 px-6 xl:px-10 py-2 xl:py-2.5 border border-gray-500 rounded-full ml-2 xl:ml-4 font-ovo dark:border-white/50 text-sm xl:text-base">Contact <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="icon" className="w-3" /></a>
                     <button className="block md:hidden ml-2 sm:ml-3" onClick={openMenu}>
-                        <Image src={isDarkMode ? assets.menu_white :assets.menu_black} alt="icon" className="w-5 sm:w-6" />
+                        <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt="icon" className="w-5 sm:w-6" />
                     </button>
                 </div>
 
                 {/* mobile menu */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-6 sm:px-10 fixed -right-[100vw] top-0 bottom-0 w-screen z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white">
+                <ul
+                    ref={sideMenuRef}
+                    className="flex md:hidden flex-col gap-4 py-20 px-6 sm:px-10 fixed top-0 right-0 bottom-0 w-screen z-50 h-screen bg-rose-50 transition-transform duration-500 translate-x-full dark:bg-darkHover dark:text-white"
+                >
+
                     <div className="absolute right-4 sm:right-6 top-6" onClick={closeMenu}>
-                        <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="icon" className="w-5 cursor-pointer"/>
+                        <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="icon" className="w-5 cursor-pointer" />
                     </div>
                     <li><a className="font-ovo text-base sm:text-lg" onClick={closeMenu} href="#top">Home</a></li>
                     <li><a className="font-ovo text-base sm:text-lg" onClick={closeMenu} href="#about">About me</a></li>
