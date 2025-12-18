@@ -27,7 +27,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="max-w-2xl mx-auto font-ovo text-sm sm:text-base px-4">I am a fullstack developer from Enugu, Nigeria with 2 years of experience.</motion.p>
+        className="max-w-2xl mx-auto font-ovo text-sm sm:text-base px-4">I am a fullstack developer from Lagos, Nigeria with 2 years of experience.</motion.p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-4 w-full">
         <motion.a
           initial={{ y: 30, opacity: 0 }}
