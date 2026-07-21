@@ -90,20 +90,26 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'Company project',
+        description: 'Website Link',
+        bgImage: '/talentville.png',
+        link: "https://www.talentvilleafrica.com/"
+    },
+    {
         title: 'E-commerce project',
-        description: 'Web Design',
+        description: 'Website Link',
         bgImage: '/e-commerce.png',
         link: "https://flex-shopping.vercel.app"
     },
     {
         title: 'Blog project',
-        description: 'Web Design',
+        description: 'Website Link',
         bgImage: '/blog.png',
         link: "https://gist-with-adaora.vercel.app"
     },
     {
         title: 'Landing page project',
-        description: 'Web Design',
+        description: 'Website Link',
         bgImage: '/landing-page.png',
         link: "https://agency-website-beryl.vercel.app"
     },
